@@ -7,8 +7,7 @@ body {
     height: 100vh;
   }
 
-  .modal{
-      
+  .modal{      
     opacity: 0.8;
   }
 
@@ -28,24 +27,24 @@ body {
     border-radius: 1px rgb(94, 92, 92);
   }
   
-  @media (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .login-box {
       width: 20em;
       height: 28em;
       opacity: 0.8;
       border-radius: 20px;
       background: wheat;
-      top: 50%;
+      top: 20em;
       left: 50%;
-      position: absolute;
+      position: relative;
       transform: translate(-50%, -50%);
       box-sizing: border-box;
       padding: 70px 20px;
     }
   
     .login-box .logo {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       position: absolute;
       top: -50px;
@@ -63,7 +62,7 @@ body {
       margin: 0;
       padding: 0;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       display: block;
     }
   
@@ -80,7 +79,8 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 20px;
+      text-align: center;
+      font-size: 18px;
     }
   
     .login-box input[type="text"]:focus,
@@ -93,7 +93,7 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 20px;
+      font-size: 18px;
     }
   
     .login-box input[type="submit"] {
@@ -129,189 +129,32 @@ body {
       color: tomato;
     }
   
-    .conten {
-      width: 20em;
-      height: 93%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 135%;
-      left: 50%;
-      position: relative;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 20px 30px;
-    }
-  
-    .conten h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: justify;
-      font-size: 12px;
-    }
-  
-    .conten p,
-    .conten li,
-    .conten label {
-      margin: 0;
-      padding: 0 0 5px;
-      text-align: justify;
-      font-size: 12px;
+    .conten, .modal .btn  {
+     display: none;
     }
   }
-  /*
-  @media (max-width:320px) and (orientation: landscape){
-      .login-box{
-          width: 80%;
-          height: 80%;
-          opacity: .8;
-          border-radius: 20px;
-          background: wheat;
-          top: 45%;
-          left: 50%;
-          position: absolute;
-          transform: translate(-50%, -50%);
-          box-sizing: border-box;
-          padding: 70px 30px;
-      }
-      
-  
-      .login-box .logo{
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          position: absolute;
-          top: -50px;
-          left: calc(50% - 50px);
-      }
-      
-      .login-box h1{
-          margin: 0;
-          padding: 0 0 20px;
-          text-align: center;
-          font-size: 22px;
-      }
-      
-      .login-box label{
-          margin: 0;
-          padding: 0;
-          font-weight: bold;
-          display: block;
-      }
-      
-      .login-box input{
-          width: 100%;
-          margin-bottom: 20px;
-      }
-      
-      .login-box input[type="text"],
-      .login-box input[type="password"]{
-          border: none;
-          border-bottom: 1px solid #fff;
-          background: transparent;
-          outline: none;
-          height: 40px;
-          color: rgb(119, 119, 119);
-          font-size: 16px;
-      }
-      
-      .login-box input[type="text"]:focus,
-      .login-box input[type="password"]:focus{
-          text-align: center;
-          border-radius: 20px;
-          border-color: #b91116;
-          border-bottom: 1px solid #fff;
-          background: transparent;
-          outline: none;
-          height: 40px;
-          color: rgb(119, 119, 119);
-          font-size: 16px;
-      }
-      
-      .login-box input[type="submit"]{
-          border: none;
-          outline: none;
-          height: 40px;
-          background: #b91116;
-          color: white;
-          font-size: 18px;
-          border-radius: 20px;
-      }
-      
-      .login-box input[type="submit"]:hover{
-          border: none;
-          outline: none;
-          height: 40px;
-          background: #970b10;
-          color: white;
-          font-size: 18px;
-          border-radius: 20px;
-          box-shadow: #970b10;
-          cursor: pointer;
-      }
-      
-      .login-box a{
-          text-decoration: none;
-          font-size: 14px;
-          line-height: 20px;
-          color:rgb(119, 119, 119);
-      }
-      
-      .login-box a:hover{
-          color: tomato;
-      }
-  
-      .conten{
-          width: 80%;
-          height: 93%;
-          opacity: .8;
-          border-radius: 20px;
-          background: wheat;
-          top: 128%;
-          left: 50%;
-          position: relative;
-          transform: translate(-50%, -50%);
-          box-sizing: border-box;
-          padding: 20px 30px;
-      
-      }
-      
-      .conten h1{
-          margin: 0;
-          padding: 0 0 20px;
-          text-align: justify;
-          font-size: 12px;
-      }
-  
-      .conten p,.conten li,.conten label {
-          margin: 0;
-          padding: 0 0 5px;
-          text-align: justify;
-          font-size: 12px;
-      }
-  }*/
-  
-  @media (min-width: 361px) and (max-width: 479px) {
+
+  @media screen and (min-width: 361px) and (max-width: 480px) {
     .login-box {
-      width: 23em;
+      width: 21em;
       height: 33em;
       opacity: 0.8;
       border-radius: 20px;
       background: wheat;
       top: 50%;
       left: 50%;
-      position: absolute;
+      position: relative;
       transform: translate(-50%, -50%);
       box-sizing: border-box;
       padding: 70px 30px;
     }
   
     .login-box .logo {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       position: absolute;
-      top: -60px;
+      top: -50px;
       left: calc(50% - 50px);
     }
   
@@ -319,7 +162,7 @@ body {
       margin: 0;
       padding: 0 0 25px;
       text-align: center;
-      font-size: 30px;
+      font-size: 26px;
     }
   
     .login-box label {
@@ -327,7 +170,7 @@ body {
       padding: 0;
       font-weight: bold;
       display: block;
-      font-size: 22px;
+      font-size: 18px;
     }
   
     .login-box input {
@@ -343,7 +186,8 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 25px;
+      text-align: center;
+      font-size: 18px;
     }
   
     .login-box input[type="text"]:focus,
@@ -356,16 +200,16 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 25px;
+      font-size: 18px;
     }
   
     .login-box input[type="submit"] {
       border: none;
       outline: none;
-      height: 50px;
+      height: 40px;
       background: #b91116;
       color: white;
-      font-size: 30px;
+      font-size: 20px;
       border-radius: 30px;
     }
   
@@ -393,46 +237,21 @@ body {
       color: tomato;
     }
   
-    .conten {
-      width: 23em;
-      height: 90%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 133%;
-      left: 50%;
-      position: relative;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 20px 30px;
-    }
-  
-    .conten h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: justify;
-      font-size: 20px;
-    }
-  
-    .conten p,
-    .conten li,
-    .conten label {
-      margin: 0;
-      padding: 0 0 5px;
-      text-align: justify;
-      font-size: 16px;
+    .conten, .modal .btn {
+      display: none;
     }
   }
-  @media (min-width: 480px) and (max-width: 639px) {
+
+  @media screen and (min-width: 481px) and (max-width: 1079px) {
     .login-box {
-      width: 80%;
-      height: 65%;
+      width: 23em;
+      height: 33em;
       opacity: 0.8;
       border-radius: 20px;
       background: wheat;
-      top: 42%;
+      top: 50%;
       left: 50%;
-      position: absolute;
+      position: relative;
       transform: translate(-50%, -50%);
       box-sizing: border-box;
       padding: 70px 30px;
@@ -448,23 +267,24 @@ body {
     }
   
     .login-box h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: center;
-      font-size: 22px;
-    }
-  
-    .login-box label {
-      margin: 0;
-      padding: 0;
-      font-weight: bold;
-      display: block;
-    }
-  
-    .login-box input {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+        margin: 0;
+        padding: 0 0 25px;
+        text-align: center;
+        font-size: 28px;
+      }
+    
+      .login-box label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+        font-size: 20px;
+      }
+    
+      .login-box input {
+        width: 100%;
+        margin-bottom: 30px;
+      }
   
     .login-box input[type="text"],
     .login-box input[type="password"] {
@@ -474,7 +294,7 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 16px;
+      font-size: 20px;
     }
   
     .login-box input[type="text"]:focus,
@@ -487,7 +307,7 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 16px;
+      font-size: 20px;
     }
   
     .login-box input[type="submit"] {
@@ -496,7 +316,7 @@ body {
       height: 40px;
       background: #b91116;
       color: white;
-      font-size: 18px;
+      font-size: 22px;
       border-radius: 20px;
     }
   
@@ -515,7 +335,7 @@ body {
   
     .login-box a {
       text-decoration: none;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 20px;
       color: rgb(119, 119, 119);
     }
@@ -524,58 +344,20 @@ body {
       color: tomato;
     }
   
-    .conten {
-      width: 80%;
-      height: 107%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 130%;
-      left: 50%;
-      position: relative;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 20px 30px;
-    }
-  
-    .conten h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: justify;
-      font-size: 18px;
+    .conten, .modal .btn {
+      display: none;
     }
   }
   
-  @media (min-width: 640px) and (max-width: 719px) {
-    .conten {
-      width: 520px;
-      height: 420px;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 50%;
-      left: 37%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 20px 30px;
-    }
-  
-    .conten h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: justify;
-      font-size: 18px;
-    }
-  
+  @media screen and (min-width: 1080px) and (max-width: 1439px), (min-width: 1440px) {
     .login-box {
-      width: 320px;
-      height: 420px;
+      width: 23em;
+      height: 37em;
       opacity: 0.8;
       border-radius: 20px;
       background: wheat;
       top: 50%;
-      left: 70%;
+      left: 77%;
       position: absolute;
       transform: translate(-50%, -50%);
       box-sizing: border-box;
@@ -593,9 +375,9 @@ body {
   
     .login-box h1 {
       margin: 0;
-      padding: 0 0 20px;
+      padding: 0 0 10%;
       text-align: center;
-      font-size: 22px;
+      font-size: 24px;
     }
   
     .login-box label {
@@ -603,11 +385,12 @@ body {
       padding: 0;
       font-weight: bold;
       display: block;
+      font-size: 18px;
     }
   
     .login-box input {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 8%;
     }
   
     .login-box input[type="text"],
@@ -618,7 +401,8 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 16px;
+      font-size: 18px;
+      text-align: center;
     }
   
     .login-box input[type="text"]:focus,
@@ -631,16 +415,16 @@ body {
       outline: none;
       height: 40px;
       color: rgb(119, 119, 119);
-      font-size: 16px;
+      font-size: 20px;
     }
   
     .login-box input[type="submit"] {
       border: none;
       outline: none;
-      height: 40px;
+      height: 50px;
       background: #b91116;
       color: white;
-      font-size: 18px;
+      font-size: 20px;
       border-radius: 20px;
     }
   
@@ -650,7 +434,7 @@ body {
       height: 40px;
       background: #970b10;
       color: white;
-      font-size: 18px;
+      font-size: 20px;
       border-radius: 20px;
       box-shadow: #970b10;
       cursor: pointer;
@@ -658,7 +442,7 @@ body {
   
     .login-box a {
       text-decoration: none;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 20px;
       color: rgb(119, 119, 119);
     }
@@ -666,389 +450,296 @@ body {
     .login-box a:hover {
       color: tomato;
     }
-  }
   
-  @media (min-width: 720px) and (max-width: 1079px) {
+    .conten {
+      width: 50%;
+      height: 58%;
+      opacity: 0.8;
+      border-radius: 20px;
+      background: wheat;
+      top: 50%;
+      left: 33%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      padding: 20px 30px;
+    }
+  
+    .conten h1 {
+      margin: 0;
+      padding: 10px 0 20px;
+      text-align: justify;
+      font-size: 20px;
+    }
+  
+    .conten p,
+    .conten li,
+    .conten label {
+      font-size: 16px;
+    }
+  }
+/*
+  @media screen and  {
+    .login-box {
+        width: 10%;
+        height: 37em;
+        opacity: 0.8;
+        border-radius: 20px;
+        background: wheat;
+        top: 50%;
+        left: 77%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+      }
     
-    .login-box {
-      width: 80%;
-      height: 60%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 40%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 70px 30px;
+      .login-box .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+      }
+    
+      .login-box h1 {
+        margin: 0;
+        padding: 0 0 10%;
+        text-align: center;
+        font-size: 24px;
+      }
+    
+      .login-box label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+        font-size: 18px;
+      }
+    
+      .login-box input {
+        width: 100%;
+        margin-bottom: 8%;
+      }
+    
+      .login-box input[type="text"],
+      .login-box input[type="password"] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: rgb(119, 119, 119);
+        font-size: 18px;
+        text-align: center;
+      }
+    
+      .login-box input[type="text"]:focus,
+      .login-box input[type="password"]:focus {
+        text-align: center;
+        border-radius: 20px;
+        border-color: #b91116;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: rgb(119, 119, 119);
+        font-size: 20px;
+      }
+    
+      .login-box input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 50px;
+        background: #b91116;
+        color: white;
+        font-size: 20px;
+        border-radius: 20px;
+      }
+    
+      .login-box input[type="submit"]:hover {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #970b10;
+        color: white;
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: #970b10;
+        cursor: pointer;
+      }
+    
+      .login-box a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgb(119, 119, 119);
+      }
+    
+      .login-box a:hover {
+        color: tomato;
+      }
+    
+      .conten {
+        width: 50%;
+        height: 58%;
+        opacity: 0.8;
+        border-radius: 20px;
+        background: wheat;
+        top: 50%;
+        left: 33%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 20px 30px;
+      }
+    
+      .conten h1 {
+        margin: 0;
+        padding: 10px 0 20px;
+        text-align: justify;
+        font-size: 20px;
+      }
+    
+      .conten p,
+      .conten li,
+      .conten label {
+        font-size: 16px;
+      }
     }
   
-    .login-box .logo {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      position: absolute;
-      top: -70px;
-      left: calc(50% - 50px);
-    }
+    @media (min-width: 1440px) {
+      .login-box {
+        width: 35em;
+        height: 40em;
+        opacity: 0.8;
+        border-radius: 20px;
+        background: wheat;
+        top: 50%;
+        left: 77%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+      }
+    
+      .login-box .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+      }
+    
+      .login-box h1 {
+        margin: 0;
+        padding: 0 0 10%;
+        text-align: center;
+        font-size: 28px;
+      }
+    
+      .login-box label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+        font-size: 24px;
+      }
+    
+      .login-box input {
+        width: 100%;
+        margin-bottom: 8%;
+      }
+    
+      .login-box input[type="text"],
+      .login-box input[type="password"] {
+        border: none;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: rgb(119, 119, 119);
+        font-size: 24px;
+      }
+    
+      .login-box input[type="text"]:focus,
+      .login-box input[type="password"]:focus {
+        text-align: center;
+        border-radius: 20px;
+        border-color: #b91116;
+        border-bottom: 1px solid #fff;
+        opacity: 0.8;
+        outline: none;
+        height: 40px;
+        color: rgb(119, 119, 119);
+        font-size: 24px;
+      }
+    
+      .login-box input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 50px;
+        background: #b91116;
+        color: white;
+        font-size: 28px;
+        border-radius: 20px;
+      }
+    
+      .login-box input[type="submit"]:hover {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #970b10;
+        color: white;
+        font-size: 28px;
+        border-radius: 20px;
+        box-shadow: #970b10;
+        cursor: pointer;
+      }
+    
+      .login-box a {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 20px;
+        color: rgb(119, 119, 119);
+      }
+    
+      .login-box a:hover {
+        color: tomato;
+      }
   
-    .login-box h1 {
-      margin: 0 2;
-      padding: 0 0 20px;
-      text-align: center;
-      font-size: 35px;
-    }
-  
-    .login-box label {
-      margin: 0;
-      padding: 0;
-      font-weight: bold;
-      display: block;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-  
-    .login-box input {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .login-box input[type="text"],
-    .login-box input[type="password"] {
-      border: none;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 40px;
-      color: rgb(119, 119, 119);
-      font-size: 28px;
-    }
-  
-    .login-box input[type="text"]:focus,
-    .login-box input[type="password"]:focus {
-      text-align: center;
-      border-radius: 20px;
-      border-color: #b91116;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 40px;
-      color: rgb(119, 119, 119);
-      font-size: 28px;
-    }
-  
-    .login-box input[type="submit"] {
-      border: none;
-      outline: none;
-      height: 2em;
-      background: #b91116;
-      color: white;
-      font-size: 30px;
-      border-radius: 20px;
-      margin-bottom: 1em;
-    }
-  
-    .login-box input[type="submit"]:hover {
-      border: none;
-      outline: none;
-      height: 2em;
-      background: #970b10;
-      color: white;
-      font-size: 30px;
-      border-radius: 20px;
-      box-shadow: #970b10;
-      cursor: pointer;
-    }
-  
-    .login-box a {
-      text-decoration: none;
-      font-size: 20px;
-      line-height: 20px;
-      color: rgb(119, 119, 119);
-    }
-  
-    .login-box a:hover {
-      color: tomato;
-    }
-  
-    .conten {
-      width: 80%;
-      height: 58%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 103%;
-      left: 50%;
-      position: relative;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 20px 30px;
-    }
-  
-    .conten h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: justify;
-      font-size: 18px;
-    }
-  }
-  
-  @media (min-width: 1080px) and (max-width: 1439px) {
-    .login-box {
-      width: 33%;
-      height: 58%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 50%;
-      left: 77%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 70px 30px;
-    }
-  
-    .login-box .logo {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      position: absolute;
-      top: -50px;
-      left: calc(50% - 50px);
-    }
-  
-    .login-box h1 {
-      margin: 0;
-      padding: 0 0 10%;
-      text-align: center;
-      font-size: 28px;
-    }
-  
-    .login-box label {
-      margin: 0;
-      padding: 0;
-      font-weight: bold;
-      display: block;
-      font-size: 24px;
-    }
-  
-    .login-box input {
-      width: 100%;
-      margin-bottom: 8%;
-    }
-  
-    .login-box input[type="text"],
-    .login-box input[type="password"] {
-      border: none;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 40px;
-      color: rgb(119, 119, 119);
-      font-size: 24px;
-    }
-  
-    .login-box input[type="text"]:focus,
-    .login-box input[type="password"]:focus {
-      text-align: center;
-      border-radius: 20px;
-      border-color: #b91116;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 40px;
-      color: rgb(119, 119, 119);
-      font-size: 24px;
-    }
-  
-    .login-box input[type="submit"] {
-      border: none;
-      outline: none;
-      height: 50px;
-      background: #b91116;
-      color: white;
-      font-size: 28px;
-      border-radius: 20px;
-    }
-  
-    .login-box input[type="submit"]:hover {
-      border: none;
-      outline: none;
-      height: 40px;
-      background: #970b10;
-      color: white;
-      font-size: 28px;
-      border-radius: 20px;
-      box-shadow: #970b10;
-      cursor: pointer;
-    }
-  
-    .login-box a {
-      text-decoration: none;
-      font-size: 20px;
-      line-height: 20px;
-      color: rgb(119, 119, 119);
-    }
-  
-    .login-box a:hover {
-      color: tomato;
-    }
-  
-    .conten {
-      width: 50%;
-      height: 58%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 50%;
-      left: 33%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 20px 30px;
-    }
-  
-    .conten h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: justify;
-      font-size: 24px;
-    }
-  
-    .conten p,
-    .conten li,
-    .conten label {
-      font-size: 22px;
-    }
-  }
-
-  @media (min-width: 1080px) and (max-width: 1439px) {
-    .login-box {
-      width: 33%;
-      height: 58%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 50%;
-      left: 77%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 70px 30px;
-    }
-  
-    .login-box .logo {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      position: absolute;
-      top: -50px;
-      left: calc(50% - 50px);
-    }
-  
-    .login-box h1 {
-      margin: 0;
-      padding: 0 0 10%;
-      text-align: center;
-      font-size: 28px;
-    }
-  
-    .login-box label {
-      margin: 0;
-      padding: 0;
-      font-weight: bold;
-      display: block;
-      font-size: 24px;
-    }
-  
-    .login-box input {
-      width: 100%;
-      margin-bottom: 8%;
-    }
-  
-    .login-box input[type="text"],
-    .login-box input[type="password"] {
-      border: none;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 40px;
-      color: rgb(119, 119, 119);
-      font-size: 24px;
-    }
-  
-    .login-box input[type="text"]:focus,
-    .login-box input[type="password"]:focus {
-      text-align: center;
-      border-radius: 20px;
-      border-color: #b91116;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 40px;
-      color: rgb(119, 119, 119);
-      font-size: 24px;
-    }
-  
-    .login-box input[type="submit"] {
-      border: none;
-      outline: none;
-      height: 50px;
-      background: #b91116;
-      color: white;
-      font-size: 28px;
-      border-radius: 20px;
-    }
-  
-    .login-box input[type="submit"]:hover {
-      border: none;
-      outline: none;
-      height: 40px;
-      background: #970b10;
-      color: white;
-      font-size: 28px;
-      border-radius: 20px;
-      box-shadow: #970b10;
-      cursor: pointer;
-    }
-  
-    .login-box a {
-      text-decoration: none;
-      font-size: 20px;
-      line-height: 20px;
-      color: rgb(119, 119, 119);
-    }
-  
-    .login-box a:hover {
-      color: tomato;
-    }
-  
-    .conten {
-      width: 50%;
-      height: 58%;
-      opacity: 0.8;
-      border-radius: 20px;
-      background: wheat;
-      top: 50%;
-      left: 33%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      box-sizing: border-box;
-      padding: 20px 30px;
-    }
-  
-    .conten h1 {
-      margin: 0;
-      padding: 0 0 20px;
-      text-align: justify;
-      font-size: 24px;
-    }
-  
-    .conten p,
-    .conten li,
-    .conten label {
-      font-size: 22px;
-    }
+      .info{
+          display: none;
+      }
+    
+      .conten {
+        width: 50%;
+        height: 58%;
+        opacity: 0.8;
+        border-radius: 20px;
+        background: wheat;
+        top: 50%;
+        left: 33%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 20px 30px;
+      }
+    
+      .conten h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: justify;
+        font-size: 24px;
+      }
+    
+      .conten p,
+      .conten li,
+      .conten label {
+        font-size: 22px;
+      }
   }
   
