@@ -12,66 +12,64 @@
     <title>UAEH-Portal Aspirantes</title>
   </head>
   <body>
-    <div class="container"></div>
-        <div class="conten">
-            <h1 class="titulo">Desde aquí podrá dar seguimiento al trámite para obtener su ficha</h1>
-            <p>Ingrese la matrícula y contraseña proporcionados al momento de hacer el preregistro.</p>
-            <p>Podrá:</p>
-            <ul>
-                <li>Contastar la <strong><em>Encuesta Socioeconómica.</em></strong> </li>
-                <li>Imprimir su <strong><em>Forma de pago</em></strong> para obtener la FICHA.</li>
-                <li>Contastar la Encuesta de <strong><em>Requerimirntos Técnicos.</em></strong> </li>
-                <li>Contastar la Encuesta de <atrong><em>Factores de Riesgo en la Salud.</em></atrong></li>
-                <li>Realizar el <strong><em>Examen de Ubicación de Inglés.</em></strong></li>
-                <li>Consultar la <strong>fecha y hora de <em>aplicación del examen de selección.</em></strong></li>
-                <li>Consultar los <strong><em>Resultados</em></strong> del examen de selección.</li>
-                <li>Consultar el <strong><em>Dictamen</em> del examen CENEVAL.</strong></li>
-            </ul>
-            <label>Si no cuenta con matrícula y contraseña de clic en <em><a href="http://servicios.uaeh.edu.mx/dce/admisiones/preregistro/index.php">Registrarme</a></em></label>
-        </div>
-        <div class="login-box">
-            <img class="logo" src="https://cdn.glitch.com/c85332cc-350c-45c4-b8e8-a653156b0535%2Fgarza.png?v=1623099530809" alt="Logo UAEH">
-            <h1>¡Futuros Garzas!</h1>
-            <form name = "user" action="https://www.uaeh.edu.mx/" method="" target="_self">
-                <label for="user-name">No. Matrícula:</label>
-                <input name="user" type="text" placeholder="123456" pattern="[0-9]{6}" required>
-                <label for="password">Contraseña:</label>
-                <input name="pass" type="password" placeholder="****" pattern="[0-9]{4}" required>
-                <input class="botones" type="submit" name="summit" value="Iniciar sesión">
-                <a href="mailto:examengarzadesdecasa@uaeh.edu.mx?Subject=Solicitud%20de%20Matricula%20y/o%20Contraseña">Perdí mi Matrícula y/o Contraseña</a>
-                <br>
-                <a href="http://servicios.uaeh.edu.mx/dce/admisiones/preregistro/index.php">Registrarme</a>
-                <br>
-                <a class="info" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Más información</a>
-            </form> 
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
+    <div class="login-box">
+        <img class="logo" src="https://cdn.glitch.com/c85332cc-350c-45c4-b8e8-a653156b0535%2Fgarza.png?v=1623099530809" alt="Logo UAEH">
+        <h1>¡Futuros Garzas!</h1>
+        <form name = "user" action="https://www.uaeh.edu.mx/" method="" target="_self">
+            <label for="user-name">No. Matrícula:</label>
+            <input name="user" type="text" placeholder="123456" pattern="[0-9]{6}" required>
+            <label for="password">Contraseña:</label>
+            <input name="pass" type="password" placeholder="****" pattern="[0-9]{4}" required>
+            <input class="botones" type="submit" name="summit" value="Iniciar sesión">
+            <a href="mailto:examengarzadesdecasa@uaeh.edu.mx?Subject=Solicitud%20de%20Matricula%20y/o%20Contraseña">Perdí mi Matrícula y/o Contraseña</a>
+            <br>
+            <a href="http://servicios.uaeh.edu.mx/dce/admisiones/preregistro/index.php">Registrarme</a>
+            <br>
+            <a class="info" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Más información</a>
+        </form> 
+    </div>
+    <div class="conten">
+        <h1 class="titulo">Desde aquí podrá dar seguimiento al trámite para obtener su ficha</h1>
+        <p>Ingrese la matrícula y contraseña proporcionados al momento de hacer el preregistro.</p>
+        <p>Podrá:</p>
+        <ul>
+            <li>Contastar la <strong><em>Encuesta Socioeconómica.</em></strong> </li>
+            <li>Imprimir su <strong><em>Forma de pago</em></strong> para obtener la FICHA.</li>
+            <li>Contastar la Encuesta de <strong><em>Requerimirntos Técnicos.</em></strong> </li>
+            <li>Contastar la Encuesta de <strong><em>Factores de Riesgo en la Salud.</em></strong></li>
+            <li>Realizar el <strong><em>Examen de Ubicación de Inglés.</em></strong></li>
+            <li>Consultar la <strong>fecha y hora de <em>aplicación del examen de selección.</em></strong></li>
+            <li>Consultar los <strong><em>Resultados</em></strong> del examen de selección.</li>
+            <li>Consultar el <strong><em>Dictamen</em> del examen CENEVAL.</strong></li>
+        </ul>
+        <label>Si no cuenta con matrícula y contraseña de clic en <em><a href="http://servicios.uaeh.edu.mx/dce/admisiones/preregistro/index.php">Registrarme</a></em></label>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Desde aquí podrá dar seguimiento al trámite para obtener su ficha</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="staticBackdropLabel">Desde aquí podrá dar seguimiento al trámite para obtener su ficha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>Ingrese la matrícula y contraseña proporcionados al momento de hacer el preregistro.</p>
                     <p>Podrá:</p>
                     <ul>
-                        <li>Contastar la  <em>Encuesta Socioeconómica.</em></li>
-                        <li>Imprimir su<em>Forma de pago</em> para obtener la FICHA.</li>
-                        <li>Contastar la Encuesta de <em>Requerimirntos Técnicos.</em></li>
-                        <li>Contastar la Encuesta de <em>Factores de Riesgo en la Salud.</em></li>
-                        <li>Realizar el <em>Examen de Ubicación de Inglés.</em></li>
-                        <li>Consultar la fecha y hora de <em>aplicación del examen de selección.</em></li>
-                        <li>Consultar el <em>Resultado</em> del examen de selección.</li>
-                        <li>Consultar el <em>Dictamen</em> del examen CENEVAL.</li>
+                        <li>Contastar la <strong><em>Encuesta Socioeconómica.</em></strong> </li>
+                        <li>Imprimir su <strong><em>Forma de pago</em></strong> para obtener la FICHA.</li>
+                        <li>Contastar la Encuesta de <strong><em>Requerimirntos Técnicos.</em></strong> </li>
+                        <li>Contastar la Encuesta de <strong><em>Factores de Riesgo en la Salud.</em></strong></li>
+                        <li>Realizar el <strong><em>Examen de Ubicación de Inglés.</em></strong></li>
+                        <li>Consultar la <strong>fecha y hora de <em>aplicación del examen de selección.</em></strong></li>
+                        <li>Consultar los <strong><em>Resultados</em></strong> del examen de selección.</li>
+                        <li>Consultar el <strong><em>Dictamen</em> del examen CENEVAL.</strong></li>
                     </ul>
                     <label>Si no cuenta con matrícula y contraseña de clic en <em>Registrarme</em></label>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
-            </div>
             </div>
         </div>
     </div>
