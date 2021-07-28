@@ -1,0 +1,779 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portal de seguimiento - UAEH</title>
+    <meta name="description" content="Sistema de seguimiento UAEH Proceso de selección">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
+<!-- CSS -->
+<link href="https://unpkg.com/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+
+<!-- JavaScript -->
+
+</head>
+
+<body>
+
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <br>
+                
+                    <li class="menu-title">Información</li><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>FAQs</a>
+                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Encuesta</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Pago</a></li>
+                            <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Encuesta médica</a></li>
+                            <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Examen Inglés</a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Contacto</a>
+                        
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Descarga tu guía</a>
+                    </li>
+                    
+
+                    
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="top-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="images/logo.png" alt="Logo"></a>
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="header-menu">
+                    <div class="header-left">
+                    
+                        
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">3</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">Tienes 3 notificaciones</p>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Has validado correctamente tus correos electrónicos.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Aún no realizas tu examen de ubicación de inglés.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Registro próximo a cerrarse, completa los pasos restantes.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Inicio</a>
+                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Cerrar sesión</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /#header -->
+
+    
+
+
+
+        <!-- Content -->
+        <div class="content">
+
+            
+            <!-- Datos de aspirante -->
+            <div class="datosAspirantes">
+                <div class="card">
+                    <div class="card-header bg-uaeh">
+                        <strong class="card-title text-white nombreAspirante">¡Hola Jose Alejandro Avila Pérez!</strong>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Te felicitamos por seguir preparándote académicamente y registrarte a la <strong>LICENCIATURA EN MÉDICO CIRUJANO (PACHUCA)</strong>, tu matrícula es <strong>863452</strong>.</p>
+
+                    </div>
+                    <div class="card-footer bg-uaehFooter border ">
+                    <i class="fas fa-user-check"></i><small class="text-muted text-right "> Realizaste tu registro el <strong>8 de septiembre de 2021.</strong></small>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Datos de aspirante -->
+            <!-- Barra de progreso -->
+           
+              
+              
+             <!-- Barra de progreso -->
+
+
+            <!-- Correos -->
+            <div id="correo2DIV">
+                <div class=".col-md-6 .offset-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                                <p class="card-text "> <i class="fas fa-exclamation-circle fa-lg border-top-0"></i> El primer paso
+                                    es confirmar tus correos electrónicos, hagámoslo a continuación: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Correos -->
+
+ 
+            
+
+
+            <!-- Animacion -->
+            <div class="animated fadeIn">
+                
+
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib correo-color-uaeh">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text">correo1@hotmail.com</div>
+                                            <div class="stat-heading"><i class="fas fa-times"></i> SIN VERIFICAR</div>
+                                            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#modalCorreo1" data-placement="top" title="Editar correo">Editar</button>
+                                            <button type="button" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="top" title="verificar correo" onclick="myFunction(), myFunction2()" >Verificar</button>
+                                            <!-- Modal Correo 1-->
+                                                <div class="modal fade" id="modalCorreo1" tabindex="-1" role="dialog" aria-labelledby="modalCorreo1" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalCorreo1Titulo">Escribe tu nuevo correo electrónico</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                              <span class="input-group-text" id="basic-addon1">@</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="basic-addon1">
+                                                 </div>
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                             <!-- Modal Correo 1-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib correo-color-uaeh">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text">correo2@gmail.com</div>
+                                            <div class="stat-heading"> <i class="fas fa-check"></i> VERIFICADO</div>
+                                            <button type="button" class="btn btn-secondary btn-sm ">Editar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Correos -->
+
+
+
+
+                <!-- Script ocultar contenido -->
+                <script>
+                    function myFunction2() {
+                        var x = document.getElementById("correo2DIV");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("correoDIV");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+                  
+                <!--  Script ocultar contenido-->
+
+                </div>
+                <!-- Alerta Correos -->
+                <div id="correoDIV">
+                    <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading text-center"><strong>INFORMACIÓN IMPORTANTE</strong></h4>
+                        <hr>
+                        <p class="mb-0 text-center">Verifica tus correos electrónicos para poder continuar.</p>
+                        <p class="mb-0 mt-2 text-right"><a href="#" data-toggle="modal" data-target="#modalAyudaCorreo" ><small><i class="fas fa-exclamation-circle fa-lg border-top-0"></i> Ayuda</a></small></p>
+
+
+                        <!-- Modal ayuda correo-->
+                        <div class="modal fade" id="modalAyudaCorreo" tabindex="-1" role="dialog" aria-labelledby="modalAyudaCorreo" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalCorreo1Titulo">¿Tienes problemas en validar tu correo?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <!--Contenido del modal-->
+                                        <div class="list-group ">
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                              <div class="d-flex w-100 justify-content-between">
+                                              </div>
+                                              <p class="mb-1 letrasModalsTitulos">Verifica que tu correo tenga un formato valido.</p>
+                                              <small class="text-muted">@uaeh.edu.mx, @gmail.com, @hotmail.com, @outlook.com.</small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                              <div class="d-flex w-100 justify-content-between">
+                                                <p class="mb-1 letrasModalsTitulos">Le di clic en <strong>Verificar</strong> pero mi correo no se verifica</p>
+                                                
+                                              </div>
+                                              <small class="text-muted">Al darle clic en </strong>Verificar</strong>, te enviamos un correo, sigue las instrucciones y verificalo. Revisa en tu 
+                                                carpeta de SPAM o NO DESEADO.
+                                              </small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                              <div class="d-flex w-100 justify-content-between">
+                                                <p class="mb-1 letrasModalsTitulos">Perdi el acceso a mi correo electrónico ¿Qué puedo hacer?</p>
+                                                
+                                              </div>
+                                              <small class="text-muted">Puedes editar tus correos electrónicos, para esto, da clic en el boton <strong>EDITAR</strong>. Recuerda que si lo modificas es necesario
+                                                  verificarlo nuevamente.
+                                              </small>
+                                            </a>
+                                          </div>
+                                          <!--Contenido del modal-->
+                             </div>
+                                    
+                                </div>
+                                <div class="modal-footer footerLetraModal">
+                                    <footerModal>Si sigues presentando problemas al validar tus correos, comunicate al <strong><a href="#">CALL CENTER</a></strong> o escribe a <strong>examgengarzadesdecasa@uaeh.edu.mx</strong>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                         <!-- Modal ayuda correo-->
+                    </div>
+                </div> 
+                <!-- Alerta Correos -->
+
+
+        <!-- Encuesta socioeconomica -->  
+            <div class=".col-md-6 .offset-md-3">
+                <div class="card">
+                    <div class="card-header colorTablasEncuesta nombreTablas">
+                        <strong class="card-title text-center text-white align-items-center d-flex justify-content-center"><i class="fas fa-poll-h fa-2x"></i> &nbsp ENCUESTA SOCIOECONÓMICA</strong>
+                        <p class="text-center text-white"><medium> Esta encuesta se cerrará el: <strong>15 de noviembre de 2021</strong></medium></p>
+                        
+                        
+                    </div>
+                    <div class="card-body colorTablasBodyEncuesta">
+                        <p class="card-text"><medium>Para imprimir la forma de pago es necesario llenar la encuesta socioeconómica de CENEVAL dentro del periodo del registro.
+                            </medium></p>
+                        <a href="#" class="btn boton-uaeh text-white ">Ir a encuesta Socioeconómica</a>
+                        <p class="mb-0 mt-2 text-right text-white"><a href="#" data-toggle="modal" data-target="#modalAyudaEncuestaSocioeconomica">
+                        <i class="fas fa-exclamation-circle fa-lg border-top-0"></i> <small>Ayuda</small></a></p>
+                        
+                    </div>
+                    <div class="modal fade" id="modalAyudaEncuestaSocioeconomica" tabindex="-1" role="dialog"
+                        aria-labelledby="modalAyudaEncuestaSocioeconomica" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalCorreo1Titulo">¿Tienes problemas al contestar tu Encuesta
+                                        Socioeconómica?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <!--Contenido del modal Encuesta-->
+                                        <div class="list-group ">
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                </div>
+                                                <p class="mb-1 letrasModalsTitulos">Verifica que tu correo tenga un formato valido.</p>
+                                                <small class="text-muted">@uaeh.edu.mx, @gmail.com, @hotmail.com, @outlook.com.</small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <p class="mb-1 letrasModalsTitulos">Le di clic en <strong>Verificar</strong> pero mi
+                                                        correo no se verifica</p>
+                    
+                                                </div>
+                                                <small class="text-muted">Al darle clic en </strong>Verificar</strong>, te enviamos un
+                                                    correo, sigues las instrucciones y verificalo. Revisa en tu
+                                                    carpeta de SPAM o NO DESEADO.
+                                                </small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">List group item heading</h5>
+                    
+                                                </div>
+                                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                                    risus varius blandit.</p>
+                                                <small class="text-muted">Donec id elit non mi porta.</small>
+                                            </a>
+                                        </div>
+                                        <!--Contenido del modal Encuesta-->
+                                    </div>
+                                </div>
+                                <div class="modal-footer footerLetraModal">
+                                    <footerModal>Si sigues presentando problemas al contestar tu encuesta socioeconómica, comunicate al <strong><a href="#">CALL CENTER</a></strong> o escribe a <strong>examgengarzadesdecasa@uaeh.edu.mx</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal ayuda correo-->
+                    
+                    
+                    </div>
+                    </div>
+
+            
+
+        <!-- Encuesta socioeconomica -->   
+
+
+        <!-- Pago -->  
+        <div class=".col-md-6 .offset-md-3">
+            <div class="card">
+                <div class="card-header text-center colorTablasPago nombreTablas">
+                    <strong class="card-title text-white align-items-center d-flex justify-content-center"><i class="fas fa-file-invoice-dollar fa-2x"></i></i> &nbsp REALIZA TU PAGO</strong>
+                    
+                    
+                </div>
+                <div class="card-body colorTablasPagoBody">
+                    <p class="card-text ">
+                        <small>Genera y acude con tu "Forma de Pago" a cualquiera de los bancos indicados en la misma y realice el pago de <strong>$600.00 (Seiscientos pesos 00/100 M. N.)</strong>
+                        por concepto de “Ficha de derecho a examen”; el encargado de la ventanilla del banco le entregará un comprobante de pago y/o depósito que tendrá
+                        impreso el mismo número de referencia de su "Forma de pago".
+                        <br><br>
+                        La Universidad Autónoma del Estado de Hidalgo en ningún caso podrá realizar la devolución de los pagos recibidos, toda vez que es responsabilidad del aspirante realizarlos 
+                        correctamente y completar el trámite dentro de las fechas establecidas en la Convocatoria, cada formato de pago que genera el sistema es personal e intransferible.
+                    </small> 
+                    </p>
+                    <a href="#" class="btn boton-uaeh text-white ">Genera el formato de pago
+                        
+                    </a>
+                    <p class="mb-0 mt-2 text-right text-white"><a href="#" data-toggle="modal" data-target="#modalAyudaEncuestaSocioeconomica" >
+                    <i class="fas fa-exclamation-circle fa-lg border-top-0"></i> <small>Ayuda</small></a></p>
+                    
+                </div>
+                <div class="modal fade" id="modalAyudaEncuestaSocioeconomica" tabindex="-1" role="dialog"
+                    aria-labelledby="modalAyudaEncuestaSocioeconomica" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCorreo1Titulo">¿Tienes problema al generar tu formato de pago?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <!--Contenido del modal Pago-->
+                                    <div class="list-group ">
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                            </div>
+                                            <p class="mb-1 letrasModalsTitulos">Verifica que tu correo tenga un formato valido.</p>
+                                            <small class="text-muted">@uaeh.edu.mx, @gmail.com, @hotmail.com, @outlook.com.</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <p class="mb-1 letrasModalsTitulos">Le di clic en <strong>Verificar</strong> pero mi
+                                                    correo no se verifica</p>
+                
+                                            </div>
+                                            <small class="text-muted">Al darle clic en </strong>Verificar</strong>, te enviamos un
+                                                correo, sigues las instrucciones y verificalo. Revisa en tu
+                                                carpeta de SPAM o NO DESEADO.
+                                            </small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">List group item heading</h5>
+                
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                                risus varius blandit.</p>
+                                            <small class="text-muted">Donec id elit non mi porta.</small>
+                                        </a>
+                                    </div>
+                                    <!--Contenido del modal Pago-->
+                                </div>
+                            </div>
+                            <div class="modal-footer footerLetraModal">
+                                <footerModal>Si sigues presentando problemas al generar tu formato de pago comunicate al <strong><a href="#">CALL CENTER</a></strong> o escribe a <strong>examgengarzadesdecasa@uaeh.edu.mx</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal ayuda correo-->
+                
+                
+                </div>
+                </div>
+
+        
+
+        <!-- Pago -->  
+
+
+        <!-- Encuesta Salud -->  
+            <div class=".col-md-6 .offset-md-3">
+                <div class="card">
+                    <div class="card-header colorTablasSalud nombreTablas">
+                        <strong class="card-title text-center text-white align-items-center d-flex justify-content-center"><i class="fas fa-file-medical fa-2x"></i> &nbsp ENCUESTA DE FACTORES DE RIESGO A LA SALIUD </strong>
+                        
+                        
+                    </div>
+                    <div class="card-body colorTablasBodySalud">
+                        <p class="card-text text-white "><small>
+                            Para contestar la encuesta de factores de riesgo a la salud debes tener una cuenta de correo electrónico gmail, no olvides tener a la mano CURP y tu número de afiliación en caso de contar con seguro médico ante el IMSS, ISSSTE, SEDENA, PEMEX, SEMAR, Instituciones privadas u otro, documentos que se te solicitaran al responder la encuesta.
+
+                            </small>
+                        </p>
+                        <a href="#" class="btn boton-uaeh text-white ">Ir a la Encusta de Salud</a>
+                        <p class="mb-0 mt-2 text-right text-white"><a href="#" data-toggle="modal" data-target="#modalAyudaEncuestaSocioeconomica">
+                            
+                        </a>
+                        <i class="fas fa-exclamation-circle fa-lg border-top-0 "></i> <small>Ayuda</small></a></p>
+                        
+                    </div>
+                    <div class="modal fade" id="modalAyudaEncuestaSocioeconomica" tabindex="-1" role="dialog"
+                        aria-labelledby="modalAyudaEncuestaSocioeconomica" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalCorreo1Titulo">¿Tienes problema al generar tu formato de pago?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <!--Contenido del modal Encuesta de Salud -->
+                                        <div class="list-group ">
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                </div>
+                                                <p class="mb-1 letrasModalsTitulos">Verifica que tu correo tenga un formato valido.</p>
+                                                <small class="text-muted">@uaeh.edu.mx, @gmail.com, @hotmail.com, @outlook.com.</small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <p class="mb-1 letrasModalsTitulos">Le di clic en <strong>Verificar</strong> pero mi
+                                                        correo no se verifica</p>
+                    
+                                                </div>
+                                                <small class="text-muted">Al darle clic en </strong>Verificar</strong>, te enviamos un
+                                                    correo, sigues las instrucciones y verificalo. Revisa en tu
+                                                    carpeta de SPAM o NO DESEADO.
+                                                </small>
+                                            </a>
+                                            <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">List group item heading</h5>
+                    
+                                                </div>
+                                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                                    risus varius blandit.</p>
+                                                <small class="text-muted">Donec id elit non mi porta.</small>
+                                            </a>
+                                        </div>
+                                        <!--Contenido del modal Encuesta de Salud -->
+                                    </div>
+                                </div>
+                                <div class="modal-footer footerLetraModal">
+                                    <footerModal>Si sigues presentando problemas al contestar tu encuesta de riesgos a la salud, comunicate al <strong><a href="#">CALL CENTER</a></strong> o escribe a <strong>examgengarzadesdecasa@uaeh.edu.mx</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal ayuda Encuesta de Salud -->
+                    
+                    
+                    </div>
+                    </div>
+
+            
+
+        <!-- Encuesta de Salud -->  
+
+
+    <!-- Examen de ubicación de ingles -->  
+        <section>
+            <div class="card">
+                <div class="card-header colorTablasExamenUbicacion nombreTablas">
+                    <strong class="card-title text-center text-white align-items-center d-flex justify-content-center"><i class="fas fa-language fa-2x"></i> &nbsp EXAMEN DE UBICACIÓN DE INGLÉS</strong>
+                    <p class="text-center text-white"><medium> El examen se cerrará el: <strong>20 de noviembre de 2021</strong></medium></p>
+                    
+                </div>
+                <div class="card-body colorTablasBodyExamenUbicacion">
+                    <p class="card-text "><small>
+                        El examen de ubicación de inglés está integrado por seis niveles, con reactivos de opción múltiple que evalúan las habilidades de comprensión auditiva, lectora y uso del idioma.
+                        <br>
+                        Tendrás 1 hora para contestar cada nivel. Si tu puntaje es menor al requerido para pasar al siguiente nivel, este no se habilitará.
+
+                        </small>
+                    </p>
+                    <a href="#" class="btn boton-uaeh text-white ">Ir al Examen de Ubicación de Inglés</a>
+                    <p class="mb-0 mt-2 text-right"><a href="#" data-toggle="modal" data-target="#modalAyudaEncuestaSocioeconomica">
+                        
+                    </a>
+                    <i class="fas fa-exclamation-circle fa-lg border-top-0 "></i> <small>Ayuda</small></a></p>
+                    
+                </div>
+                <div class="modal fade" id="modalAyudaEncuestaSocioeconomica" tabindex="-1" role="dialog"
+                    aria-labelledby="modalAyudaEncuestaSocioeconomica" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCorreo1Titulo">¿Tienes problema al generar tu formato de pago?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <!--Contenido del modal examen ubicacion-->
+                                    <div class="list-group ">
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                            </div>
+                                            <p class="mb-1 letrasModalsTitulos">Verifica que tu correo tenga un formato valido.</p>
+                                            <small class="text-muted">@uaeh.edu.mx, @gmail.com, @hotmail.com, @outlook.com.</small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <p class="mb-1 letrasModalsTitulos">Le di clic en <strong>Verificar</strong> pero mi
+                                                    correo no se verifica</p>
+                
+                                            </div>
+                                            <small class="text-muted">Al darle clic en </strong>Verificar</strong>, te enviamos un
+                                                correo, sigues las instrucciones y verificalo. Revisa en tu
+                                                carpeta de SPAM o NO DESEADO.
+                                            </small>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">List group item heading</h5>
+                
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                                risus varius blandit.</p>
+                                            <small class="text-muted">Donec id elit non mi porta.</small>
+                                        </a>
+                                    </div>
+                                    <!--Contenido del modal examen ubicacion-->
+                                </div>
+                            </div>
+                            <div class="modal-footer footerLetraModal">
+                                <footerModal>Si sigues presentando problemas al contestar tu examen de ubicación de inglés, comunicate al <strong><a href="#">CALL CENTER</a></strong> o escribe a <strong>examgengarzadesdecasa@uaeh.edu.mx</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal ayuda examen ubicacion-->
+                
+                
+                </div>
+                </div>
+        </section>
+        
+
+    <!-- Examen de ubicación de ingles -->  
+
+
+    <!-- Obtención de Pase de Ingreso -->  
+    <section>
+        <div class="card">
+            <div class="card-header colorTablasPase nombreTablas">
+                <strong class="card-title text-center text-white align-items-center d-flex justify-content-center"><i class="fas fa-file-alt fa-2x"></i></i> &nbsp OBTENCIÓN DE PASE DE INGRESO A EXAMEN</strong>
+                <p class="text-center text-white"><medium> Podrás obtener tu Pase de ingreso a examen a partir del: <strong>25 de noviembre de 2021</strong></medium></p>
+                
+            </div>
+            <div class="card-body colorTablasBodyPase">
+                <p class="card-text "><small>
+                    Solo podrás obtener e imprimir tu pase siempre si completaste los pasos anteriores correctamente.
+                    <br>
+                    En este pase, encontrarás la <strong>fecha, hora, lugar, sede e indicaciones para presentar el examen.</strong>
+
+                    </small>
+                </p>
+                <a href="#" class="btn boton-uaeh text-white ">Obtener Pase de ingreso a examen</a>
+                <p class="mb-0 mt-2 text-right"><a href="#" data-toggle="modal" data-target="#modalAyudaEncuestaSocioeconomica">
+                    
+                </a>
+                <i class="fas fa-exclamation-circle fa-lg border-top-0 "></i> <small>Ayuda</small></a></p>
+                
+            </div>
+            <div class="modal fade" id="modalAyudaEncuestaSocioeconomica" tabindex="-1" role="dialog"
+                aria-labelledby="modalAyudaEncuestaSocioeconomica" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalCorreo1Titulo">¿Tienes problema al generar tu formato de pago?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group mb-3">
+                                <!--Contenido del modal examen ubicacion-->
+                                <div class="list-group ">
+                                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                        </div>
+                                        <p class="mb-1 letrasModalsTitulos">Verifica que tu correo tenga un formato valido.</p>
+                                        <small class="text-muted">@uaeh.edu.mx, @gmail.com, @hotmail.com, @outlook.com.</small>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1 letrasModalsTitulos">Le di clic en <strong>Verificar</strong> pero mi
+                                                correo no se verifica</p>
+            
+                                        </div>
+                                        <small class="text-muted">Al darle clic en </strong>Verificar</strong>, te enviamos un
+                                            correo, sigues las instrucciones y verificalo. Revisa en tu
+                                            carpeta de SPAM o NO DESEADO.
+                                        </small>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">List group item heading</h5>
+            
+                                        </div>
+                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                            risus varius blandit.</p>
+                                        <small class="text-muted">Donec id elit non mi porta.</small>
+                                    </a>
+                                </div>
+                                <!--Contenido del modal examen ubicacion-->
+                            </div>
+                        </div>
+                        <div class="modal-footer footerLetraModal">
+                            <footerModal>Si presentas problemas al contestar tu encuesta socioeconómica, escribe a
+                                examgengarzadesdecasa@uaeh.edu.mx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal ayuda examen ubicacion-->
+            
+            
+            </div>
+            </div>
+    </section>
+    
+
+<!-- Obtención de Pase de Ingreso --> 
+      
+
+
+
+                
+
+
+    <!-- Scripts -->
+    <script src="assets/fontawesome/js/all.js"></script>
+    <script src="assets/fontawesome/js/fontawesome.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/popper-292.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
+    <script src="assets/js/init/fullcalendar-init.js"></script>
+
+</div>
+    
+</body>
+</html>
