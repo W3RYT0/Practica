@@ -1,73 +1,118 @@
 <!DOCTYPE html>
-<html lang="en" class="skrollr skrollr-desktop"><head>    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="en" class="skrollr skrollr-desktop">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Título Pestaña Pág -->
     <title>UAEH-Portal Aspirantes</title>
-
-    
-   
   </head>
-  
+
   <body class="headroom headroom--top headroom--not-bottom" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
     <section class="bg-black overflow-hidden">
       <div class="py-15 py-xl-20 d-flex flex-column container level-3 min-vh-100">
         <div class="row align-items-center justify-content-center my-auto">
-          <div class="col-md-10 col-lg-8 col-xl-5">  
+          <div class="col-md-10 col-lg-8 col-xl-5" style="width: 27rem">
             <div class="card">
               <div class="card-header bg-white text-center pb-0">
                 <h5 class="fs-4 mb-1">¡Futuros Garzas!</h5>
               </div>
               <div class="card-body bg-white">
                 <div class="d-grid">
-                  <a href="" class="btn btn-outline-red btn-with-icon text-white-hover">Iniciar sesión con Google <i class="bi bi-google"></i></a>
+                  <a href="#" class="btn btn-outline-red btn-with-icon text-white-hover">Iniciar sesión con Google <i class="bi bi-google"></i></a>
                 </div>
-                <div class="text-muted text-center small py-2">Usa tu Matrícula</div>
-                <form name = "user" action="seguimiento/index.html" method="" target="_self">
+                <div class="text-muted text-center small py-2"> Usa tu Matrícula </div>
+                <form name="user" action="seguimiento/index.html" method="" target="_self">
                   <div class="form-floating mb-2">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="596345" pattern="[0-9]{6}" required>
-                    <label for="floatingInput">Matrícula</label>
+                    <input type="number" class="form-control" id="floatingInput" placeholder="596345" min="100000" required />
+                    <label for="floatingInput">Matrícula</label>                   
                   </div>
                   <div class="form-floating mb-2">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="****" pattern="[0-9]{4}" required>
-                    <label for="floatingPassword">Contraseña</label>
+                    <input type="password" class="form-control" id="validationTooltip02 floatingPassword" placeholder="****" pattern="[0-9]{4}" required />
+                    <label for="validationTooltip02 floatingPassword">Contraseña</label>
                   </div>
                   <div class="d-grid mb-2">
-                    <button class="btn btn-lg btn-primary" type="submit">Iniciar Sesión</button><a href="" class="btn btn-lg btn-primary">Iniciar Sesión</a>
+                    <button class="btn btn-lg btn-danger" type="submit"> Iniciar Sesión </button>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label small text-secondary" for="defaultCheck1">
-                          Remember me
-                        </label>
+                  <div class="d-grid mb-2">
+                    <div class="alert alert-danger d-flex align-items-center" role="alert">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                      </svg>
+                      <div>
+                        <a href="#" class="link-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Más información</a>
                       </div>
                     </div>
                     <div class="col text-end">
-                      <a href="forgot-password.html" class="underline small">Forgot password?</a>
+                      <a href="mailto:examengarzadesdecasa@uaeh.edu.mx?Subject=Solicitud%20de%20Matricula%20y/o%20Contraseña" class="underline small link-danger">Olvidé mi Matrícula y/o Contraseña</a>
                     </div>
                   </div>
                 </form>
               </div>
               <div class="card-footer bg-opaque-black inverted text-center">
-                <p class="text-secondary">Don't have an account yet? <a href="register.html" class="underline">Register</a>
+                <p class="text-secondary">
+                  ¿Aún no estas registrado?
+                  <a href="http://servicios.uaeh.edu.mx/dce/admisiones/preregistro/index.php" class="underline link-danger">Registrate</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <figure class="background background-overlay" style="background-image: url('imags/fomdoexam.jpg')">
-      </figure>
-    </section>        
-          
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-          
-        </body>
-  
-  </html>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"> Desde aquí podrá dar seguimiento al trámite para obtener su ficha </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p> Ingrese la matrícula y contraseña proporcionados al momento de hacer el preregistro. </p>
+              <p>Podrá:</p>
+              <ul>
+                <li>
+                  Contastar la <strong><em>Encuesta Socioeconómica.</em></strong>
+                </li>
+                <li>
+                  Imprimir su <strong><em>Forma de pago</em></strong> para obtener la FICHA.
+                </li>
+                <li>
+                  Contastar la Encuesta de <strong><em>Requerimirntos Técnicos.</em></strong>
+                </li>
+                <li>
+                  Contastar la Encuesta de <strong><em>Factores de Riesgo en la Salud.</em></strong>
+                </li>
+                <li>
+                  Realizar el <strong><em>Examen de Ubicación de Inglés.</em></strong>
+                </li>
+                <li>
+                  Consultar la <strong>fecha y hora de <em>aplicación del examen de selección.</em></strong>
+                </li>
+                <li>
+                  Consultar los <strong><em>Resultados</em></strong> del examen de selección.
+                </li>
+                <li>
+                  Consultar el <strong><em>Dictamen</em> del examen CENEVAL.</strong>
+                </li>
+              </ul>
+              <label>
+                Si no cuenta con matrícula y contraseña de clic en <em><a class="link-danger" href="http://servicios.uaeh.edu.mx/dce/admisiones/preregistro/index.php">Registrarme</a></em>
+              </label>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figure class="background background-overlay" style="background-image: url('imags/fomdoexam.jpg')"></figure>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
