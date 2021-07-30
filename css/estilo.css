@@ -1,37 +1,38 @@
-body {
-    margin: 0;
-    padding: 0;
+body {   
     background: url(../imags/fomdoexam.jpg) center top;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    background-size: cover;    
   }
 
-  .modal{      
+  .modal{     
     opacity: 0.8;
   }
 
-  .btn{
-      position: absolute;
-      left: 50%;
-      border: none;
-      outline: none;
-      height: 40px;
-      background: #b91116;
-      color: white;
-      font-size: 20px;
-      border-radius: 25px;
+  section .card-avatar{
+    position: relative !important; 
+    background: transparent; 
+    top: 50px; 
+    border: transparent;
   }
-  
-  .logo {
-    border-radius: 1px rgb(94, 92, 92);
+
+ section .conten-avatar{
+    
   }
-  
-  .conten a, .login-box a {
-    text-decoration: none;
-    line-height: 20px;
-    color:rgb(94, 92, 92)
-  }
+
+section .img-avatar{
+  width:120px; 
+  height:120px;
+}
+
+section .bg-card{
+  /*background-color: transparent;*/
+  background-color: #F8B688;
+}
+
+section .login-box{
+  background-color: #F8B688;
+}
+
+/*
   @media screen and (max-width: 360px) {
     .login-box {
       width: 20em;
@@ -482,4 +483,4 @@ body {
     .info{
       display: none;
     }
-  }
+  }/*
