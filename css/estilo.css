@@ -3,19 +3,15 @@ body {
     background-size: cover;    
   }
 
-  .modal{     
+.modal, section .row{     
     opacity: 0.8;
   }
 
-  section .card-avatar{
-    position: relative !important; 
+section .card-avatar{
     background: transparent; 
     top: 50px; 
     border: transparent;
-  }
-
- section .conten-avatar{
-    
+    position: relative;
   }
 
 section .img-avatar{
@@ -24,8 +20,18 @@ section .img-avatar{
 }
 
 section .bg-card{
-  /*background-color: transparent;*/
-  background-color: #F8B688;
+  /*background-color: transparent;
+  background-color: #F8B688;*/
+}
+
+section .space-card {
+  width: 27rem;
+}
+
+section .card-login{
+  position: static; 
+  /*height: 34rem; */
+  border-radius: 20px;
 }
 
 section .login-box{
