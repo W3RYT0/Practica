@@ -15,8 +15,8 @@ section .card-avatar{
   }
 
 section .img-avatar{
-  width:120px; 
-  height:120px;
+  width:120px !important; 
+  height:120px !important;
 }
 
 section .bg-card{
@@ -37,6 +37,7 @@ section .card-login{
 section .login-box{
   background-color: #F8B688;
 }
+
 
 /*
   @media screen and (max-width: 360px) {

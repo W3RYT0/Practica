@@ -1,0 +1,23 @@
+@media screen and (max-width: 1199px){
+    .size {
+        width: 25rem;
+        height:20rem !important;
+        margin-top: .02rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 1199px){
+    .size {
+        height:27rem !important;
+    }
+}
+
+section img{
+        width:100% !important; 
+        height:100%; 
+        backface-visibility: hidden; 
+        vertical-align: top; 
+        border-radius: 15%; 
+        padding: 10px; 
+        box-shadow: 10px 10px 10px #999;
+      }    
